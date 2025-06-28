@@ -1,0 +1,83 @@
+#
+# alacritty.toml (configuration file for alacritty) 
+#
+
+# General setting :
+
+[general]
+
+# importing other features/files  
+
+import = [
+	"~/.config/alacritty/afterglow.toml"
+]
+
+# Window
+
+[window]
+
+# need for installing picom on i3 
+# opacity = 0.8
+# blur = true
+
+## Scrolling
+
+[scrolling]
+
+# scrolling history
+history = 10000
+multiplier = 5
+
+## Font 
+[font] 
+normal = {family = "Courier Prime", style = "Regular"}
+size = 11 
+
+## Selection
+[selection]
+# copy selected text to the clipboard
+save_to_clipboard = true
+
+## Keyboard 
+[keyboard]
+# vi mode 
+bindings= [
+#+ paste
+{ key = "p", mode = "vi", action = "paste"},
+#+ the end of line
+{ key = "$", mode = "vi", action = "last"},
+#+ go to the begining of line
+{ key = "0", mode = "vi", action = "firstOccupied"}
+]
+
+# 
+# colors 
+#
+
+[colors.primary]
+background = '#242424'
+foreground = '#f6f3e8'
+# #
+# # # Normal colors
+# [colors.normal]
+# black = '#005700'
+# red = '#005700'
+# green = '#005700'
+# yellow ='#005700'
+# blue = '#005700'
+# magenta= '#005700'
+# cyan = '#005700'
+# white = '#005700'
+#
+# # Bright colors
+# [colors.bright]
+# black = '#005700'
+# red =   '#005700'
+# green = '#005700'
+# yellow = '#005700'
+# blue =  '#005700'
+# magenta='#005700'
+# cyan =  '#005700'
+# white = '#005700'
+
+
