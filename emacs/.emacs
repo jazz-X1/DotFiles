@@ -2,8 +2,8 @@
 ;; make emacs save customization into this file 
 (setq custom-file "~/.emacs.d/lisp/custom.el")
 (load custom-file)
+ 
 
-;; working with melp
 (require 'package) ;; Ensures the package system is loaded
 
 ;; Add MELPA to the list of package archives
