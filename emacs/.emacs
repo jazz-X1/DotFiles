@@ -2,8 +2,8 @@
 ;; make emacs save customization into this file 
 (setq custom-file "~/.emacs.d/lisp/custom.el")
 (load custom-file)
- 
 
+;; working with melp
 (require 'package) ;; Ensures the package system is loaded
 
 ;; Add MELPA to the list of package archives
@@ -46,6 +46,13 @@
   ;; some keybindings
   (define-key evil-normal-state-map (kbd ",nf") 'org-roam-node-find)
   (define-key evil-normal-state-map (kbd ",ni") 'org-roam-node-insert)
+
+  ;; configuring what to display in org buffer
+  (setq org-roam-mode-sections
+      (list #'org-roam-backlinks-section
+            #'org-roam-reflinks-section
+            ;; #'org-roam-unlinked-references-section
+            ))
   )
 
 
