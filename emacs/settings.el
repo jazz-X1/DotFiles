@@ -28,3 +28,7 @@
 
 ;; no-scroll bar
 (scroll-bar-mode -1)
+
+;; ;; setting emacs-opacity 
+;; (set-frame-parameter nil 'alpha-background 90) ; For current frame
+;; (add-to-list 'default-frame-alist '(alpha-background . 90)) ; For all new frames henceforth
